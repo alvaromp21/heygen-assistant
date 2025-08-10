@@ -26,6 +26,33 @@
     <wp:author_last_name><![CDATA[]]></wp:author_last_name>
   </wp:author>
 
+  <!-- Menú de navegación preconfigurado -->
+  <item>
+    <title>Primary Navigation</title>
+    <link>https://example.com</link>
+    <guid isPermaLink="false">nav-0001</guid>
+    <content:encoded><![CDATA[
+<!-- wp:navigation {"overlayMenu":"never"} -->
+<!-- wp:navigation-link {"label":"Servicios","url":"/servicios"} /-->
+<!-- wp:navigation-link {"label":"Casos","url":"/casos"} /-->
+<!-- wp:navigation-link {"label":"Comunidad","url":"/comunidad"} /-->
+<!-- wp:navigation-link {"label":"Recursos","url":"/recursos"} /-->
+<!-- wp:navigation-link {"label":"Blog","url":"/blog"} /-->
+<!-- wp:navigation-link {"label":"Agenda","url":"/agenda"} /-->
+<!-- wp:navigation-submenu {"label":"Legal"} -->
+<!-- wp:navigation-link {"label":"Privacidad","url":"/legal/privacidad"} /-->
+<!-- wp:navigation-link {"label":"Términos","url":"/legal/terminos"} /-->
+<!-- wp:navigation-link {"label":"Cookies","url":"/legal/cookies"} /-->
+<!-- /wp:navigation-submenu -->
+<!-- /wp:navigation -->
+    ]]></content:encoded>
+    <wp:post_id>9001</wp:post_id>
+    <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+    <wp:post_type>wp_navigation</wp:post_type>
+    <wp:post_name>primary-navigation</wp:post_name>
+    <wp:status>publish</wp:status>
+  </item>
+
   <!-- Categorías del blog -->
   <wp:category>
     <wp:term_id>100</wp:term_id>
