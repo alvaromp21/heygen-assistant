@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Alvaro Site Core
  * Description: Core del sitio: CPTs, taxonomías, meta, shortcodes y SEO técnico/JSON-LD.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Álvaro Maureira
  * License: GPL2+
  * Text Domain: alvaro-site-core
@@ -24,7 +24,8 @@ function autoloadAlvaroCore(){
     'includes/meta.php',
     'includes/shortcodes.php',
     'includes/seo.php',
-    'includes/json-ld.php'
+    'includes/json-ld.php',
+    'includes/setup.php'
   ] as $file){
     $path = ALVARO_CORE_PATH . $file;
     if (file_exists($path)) require_once $path;
