@@ -1,0 +1,27 @@
+:root{
+  --brand-gradient-start:#ff3ba7; --brand-gradient-mid:#00d4ff; --brand-gradient-end:#8a2be2;
+  --brand-bg:#0e0f13; --brand-text:#f6f7fb; --brand-accent:#9b63ff;
+}
+
+html[data-color-scheme="dark"]{--brand-bg:#0b0c10;--brand-text:#f1f2f6}
+html[data-color-scheme="light"]{--brand-bg:#ffffff;--brand-text:#0b0c10}
+
+.brand-gradient{ background: linear-gradient(90deg,var(--brand-gradient-start),var(--brand-gradient-mid),var(--brand-gradient-end)); -webkit-background-clip:text; color:transparent }
+.btn-gradient{ background: linear-gradient(90deg,var(--brand-gradient-start),var(--brand-gradient-mid),var(--brand-gradient-end)); color:#0b0714 !important; border:none }
+
+.breadcrumbs{ font-size:.9rem }
+.breadcrumbs__list{ list-style:none; display:flex; gap:.5rem; padding:0; margin:.5rem 0 }
+.breadcrumbs__item{ color:var(--brand-text) }
+.breadcrumbs__item a{ color:var(--brand-accent); text-decoration:none }
+
+.sticky-cta{ position:sticky; bottom:0; z-index:50; backdrop-filter:saturate(180%) blur(10px); background:rgba(14,15,19,.7); padding:.8rem 1rem; border-top:1px solid rgba(255,255,255,.08)}
+.sticky-cta .wp-block-buttons{ margin:0 }
+
+.tablist{ display:flex; gap:.5rem; flex-wrap:wrap }
+.tablist [role="tab"]{ padding:.5rem 1rem; border-radius:999px; border:1px solid rgba(255,255,255,.2); background:transparent; color:var(--brand-text) }
+.tablist [role="tab"][aria-selected="true"]{ background:var(--brand-accent); color:#0b0714 }
+
+.faq-item{ border-bottom:1px solid rgba(255,255,255,.12) }
+.faq-button{ width:100%; text-align:left; padding:1rem 0; background:none; border:none; color:var(--brand-text); font-weight:600 }
+.faq-panel{ display:none; padding-bottom:1rem }
+.faq-panel[aria-hidden="false"]{ display:block }

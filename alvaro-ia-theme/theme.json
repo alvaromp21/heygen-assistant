@@ -1,0 +1,88 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "appearanceTools": true,
+    "color": {
+      "duotone": [],
+      "gradients": [
+        {
+          "name": "Marca (fucsia→cian→violeta)",
+          "slug": "brand",
+          "gradient": "linear-gradient(90deg, var(--brand-gradient-start) 0%, var(--brand-gradient-mid) 50%, var(--brand-gradient-end) 100%)"
+        }
+      ],
+      "palette": [
+        { "slug": "bg", "name": "Fondo", "color": "var(--brand-bg)" },
+        { "slug": "text", "name": "Texto", "color": "var(--brand-text)" },
+        { "slug": "accent", "name": "Acento", "color": "var(--brand-accent)" },
+        { "slug": "fucsia", "name": "Fucsia", "color": "#ff3ba7" },
+        { "slug": "cian", "name": "Cian", "color": "#00d4ff" },
+        { "slug": "violeta", "name": "Violeta", "color": "#8a2be2" }
+      ],
+      "link": true
+    },
+    "custom": {
+      "properties": {
+        "--brand-gradient-start": "#ff3ba7",
+        "--brand-gradient-mid": "#00d4ff",
+        "--brand-gradient-end": "#8a2be2",
+        "--brand-bg": "#0e0f13",
+        "--brand-text": "#f6f7fb",
+        "--brand-accent": "#9b63ff"
+      }
+    },
+    "layout": { "contentSize": "720px", "wideSize": "1200px" },
+    "spacing": { "units": ["px","em","rem","vh","vw","%"], "spacingScale": { "steps": 8 } },
+    "typography": {
+      "fontFamilies": [
+        {
+          "fontFamily": "system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+          "name": "Sistema",
+          "slug": "system"
+        }
+      ],
+      "fluid": true,
+      "dropCap": false
+    }
+  },
+  "styles": {
+    "color": { "background": "var(--brand-bg)", "text": "var(--brand-text)" },
+    "elements": {
+      "link": { "color": { "text": "var(--brand-accent)" } },
+      "button": {
+        "color": { "background": "var(--brand-accent)", "text": "#0b0714" },
+        "border": { "radius": "10px" },
+        "typography": { "fontWeight": "700" }
+      }
+    },
+    "blocks": {
+      "core/group": { "spacing": { "padding": { "top": "var:preset|spacing|50", "bottom": "var:preset|spacing|50" } } },
+      "core/heading": { "typography": { "fontWeight": "800" } }
+    }
+  },
+  "templateParts": [
+    { "name": "header", "title": "Header", "area": "header" },
+    { "name": "footer", "title": "Footer", "area": "footer" },
+    { "name": "sidebar", "title": "Sidebar", "area": "uncategorized" },
+    { "name": "hero", "title": "Hero", "area": "uncategorized" },
+    { "name": "cta-bar", "title": "CTA Bar", "area": "uncategorized" },
+    { "name": "breadcrumbs", "title": "Breadcrumbs", "area": "uncategorized" }
+  ],
+  "templates": {
+    "front-page": { "title": "Portada" },
+    "page": { "title": "Página" },
+    "single": { "title": "Entrada" },
+    "archive": { "title": "Archivo" },
+    "search": { "title": "Búsqueda" },
+    "404": { "title": "No encontrado" },
+    "category": { "title": "Categoría" },
+    "single-service": { "title": "Servicio" },
+    "archive-service": { "title": "Servicios" },
+    "single-case": { "title": "Caso" },
+    "archive-case": { "title": "Casos" },
+    "single-event": { "title": "Evento" },
+    "archive-event": { "title": "Agenda" }
+  },
+  "__experimentalStyleEngine": "v2"
+}

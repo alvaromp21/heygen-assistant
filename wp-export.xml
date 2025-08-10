@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Este es un placeholder simple. Sugerido: importar con Herramientas > Importar -->
+<rss version="2.0"
+  xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:wp="http://wordpress.org/export/1.2/"
+>
+<channel>
+  <title>Alvaro IA Demo</title>
+  <wp:wxr_version>1.2</wp:wxr_version>
+  <wp:base_site_url>https://example.com</wp:base_site_url>
+  <wp:base_blog_url>https://example.com</wp:base_blog_url>
+
+  <item>
+    <title>Home</title>
+    <wp:post_type>page</wp:post_type>
+    <wp:status>publish</wp:status>
+    <content:encoded><![CDATA[
+<!-- wp:template-part {"slug":"hero"} /-->
+<!-- wp:pattern {"slug":"alvaro-ia-theme/services-tabs"} /-->
+<!-- wp:shortcode -->[sticky_cta]<!-- /wp:shortcode -->
+    ]]></content:encoded>
+  </item>
+
+  <item>
+    <title>Servicios</title>
+    <wp:post_type>page</wp:post_type>
+    <wp:status>publish</wp:status>
+    <content:encoded><![CDATA[
+<!-- wp:pattern {"slug":"alvaro-ia-theme/services-tabs"} /-->
+    ]]></content:encoded>
+  </item>
+
+  <item>
+    <title>Contacto</title>
+    <wp:post_type>page</wp:post_type>
+    <wp:status>publish</wp:status>
+    <content:encoded><![CDATA[
+<!-- wp:paragraph --><p>Escríbenos para agendar un diagnóstico.</p><!-- /wp:paragraph -->
+<!-- wp:contact-form-7 /-->
+    ]]></content:encoded>
+  </item>
+
+  <item>
+    <title>Agentes Externos</title>
+    <wp:post_type>service</wp:post_type>
+    <wp:status>publish</wp:status>
+    <content:encoded><![CDATA[
+<!-- wp:paragraph --><p>Captura y cualificación de leads 24/7.</p><!-- /wp:paragraph -->
+<!-- wp:shortcode -->[faq]<!-- /wp:shortcode -->
+    ]]></content:encoded>
+  </item>
+
+  <item>
+    <title>Post demo</title>
+    <wp:post_type>post</wp:post_type>
+    <wp:status>publish</wp:status>
+    <content:encoded><![CDATA[
+<!-- wp:paragraph --><p>Contenido de ejemplo.</p><!-- /wp:paragraph -->
+    ]]></content:encoded>
+  </item>
+
+</channel>
+</rss>
